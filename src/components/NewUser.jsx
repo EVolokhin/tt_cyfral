@@ -50,7 +50,7 @@ export const NewUser = () => {
 
     localStorage.setItem('usersList', JSON.stringify([...usersList, newUser]));
 
-    window.location.href = '/';
+    window.location.href = '/tt_cyfral/';
   };
 
   const passCorrect = (password === controlPass);

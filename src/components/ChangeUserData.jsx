@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 import React, { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
@@ -37,6 +38,7 @@ export const ChangeUserData = () => {
 
     dispatch(changeUser(changedList));
     localStorage.setItem('usersList', JSON.stringify(changedList));
+    alert('Изменения сохранены');
   };
 
   return (
@@ -61,7 +63,6 @@ export const ChangeUserData = () => {
           name="position"
           onChange={editChange}
           value={user.position}
-
         />
 
         <label htmlFor="edit-phone">Телефон</label>
@@ -72,7 +73,6 @@ export const ChangeUserData = () => {
           name="phone"
           onChange={editChange}
           value={user.phone}
-
         />
 
         <label htmlFor="edit-login">Логин</label>
@@ -83,7 +83,6 @@ export const ChangeUserData = () => {
           name="login"
           onChange={editChange}
           value={user.login}
-
         />
 
         <label htmlFor="edit-password">Пароль</label>
@@ -94,7 +93,6 @@ export const ChangeUserData = () => {
           name="password"
           onChange={editChange}
           value={user.password}
-
         />
 
         <button

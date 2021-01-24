@@ -6,7 +6,7 @@ import { ChangeUserData } from './ChangeUserData';
 
 export const AdminPage = () => {
   const exit = () => {
-    window.location.href = '/';
+    window.location.href = '/tt_cyfral/';
     localStorage.removeItem('activeUser');
   };
 
